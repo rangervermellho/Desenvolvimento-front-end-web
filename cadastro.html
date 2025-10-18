@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ONG Esperança Viva</title>
+
+</head>
+
+<body>
+	<header>
+		<h1>Cadastro de Usuario</h1>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="projetos.html">Projetos</a>
+			<a href="cadastro.html">Cadastro</a>
+		</nav>
+
+	</header>
+	<form>
+
+
+
+		<br>
+		<fieldset>
+
+			<legend>Dados Pessoais</legend>
+			<div>
+				<label for="nome">Nome Completo:</label>
+				<input type="text" id="nome" name="nome" required pattern="^[A-Za-z\s]+$">
+			</div>
+			<div>
+				<label for="cpf">CPF:</label>
+				<input type="text" id="cpf" name="cpf" required pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$"
+					placeholder="xxx.xxx.xxx-xx">
+
+				<label for="nascimento">Data de Nascimento:</label>
+				<input type="date" id="nascimento" name="nascimento">
+			</div>
+			<div>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required placeholder="usuaio@domain.com.br">
+
+
+
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" name="telefone" required pattern="^[0-9]{2}[0-9]{5}[0-9]{4}$"
+					placeholder="xx xxxxx-xxxx">
+
+
+			</div>
+			<div>
+				<label for="end">Endereço:</label>
+				<input type="text" name="end" id="end" required>
+			</div>
+			<label for="cep">CEP:</label>
+			<input type="text" name="cep" id="cep" placeholder="xxxxx-xxx" pattern="^[0-9]{5}-[0-9]{3}$" required>
+
+			<label for="Cidade">Cidade:</label>
+			<input type="text" name="Cidade" id="Cidade" required pattern="^[A-Za-z\s]+$">
+
+
+			<label for="UF"> UF</label>
+			<select name="UF" id="UF">
+				<option value="">--</option>
+				<option value="ac">AC</option>
+				<option value="al">AL</option>
+				<option value="ap">AP</option>
+				<option value="am">AM</option>
+				<option value="ba">BA</option>
+				<option value="cd">CE</option>
+				<option value="df">DF</option>
+				<option value="es">ES</option>
+				<option value="go">GO</option>
+				<option value="ma">MA</option>
+				<option value="mt">MT</option>
+				<option value="ms">MS</option>
+				<option value="mg">MG</option>
+				<option value="pa">PA</option>
+				<option value="pb">PB</option>
+				<option value="pr">PR</option>
+				<option value="pe">PE</option>
+				<option value="pi">PI</option>
+				<option value="rj">RJ</option>
+				<option value="rn">RN</option>
+				<option value="rs">RS</option>
+				<option value="ro">RO</option>
+				<option value="rr">RR</option>
+				<option value="sc">SC</option>
+				<option value="sp">SP</option>
+				<option value="se">SE</option>
+				<option value="to">TO</option>
+			</select>
+
+
+
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</fieldset>
+
+	</form>
+
+</body>
+
+</html>
