@@ -296,6 +296,7 @@ img {
 }
 
 .content-card {
+  text-align: left;
   display: flex;
   align-items: center;
   gap: 50px;
