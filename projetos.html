@@ -5,107 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Esperança Viva - Projetos Sociais</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Projetos e Engajamento Social</h1>
-
+    <header id="navbar" class="site-header">
+        <h1>Projetos Sociais</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="cadastro.html">Cadastro</a>
+
+            <div class="menu" id="menu">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="projetos.html">Projetos</a></span>
+                <span><a href="cadastro.html">Seja Voluntario</a></span>
+            </div>
+
+
         </nav>
+        <br />
     </header>
 
-    <main>
+    <main class="container">
+        <section id="educacao">
+            <h2>Projeto Educação para o Futuro</h2>
+            <p>O projeto oferece aulas de reforço escolar e atividades educativas para crianças em situação de
+                vulnerabilidade social, com foco na melhoria do aprendizado e no desenvolvimento pessoal.</p>
 
-        <section id="gestao-projetos">
-            <h2>Gestão de Projetos</h2>
-            <article>
-                <h3>Projeto "Educação para o Futuro"</h3>
-                <p>
-                    Oferece reforço escolar e oficinas culturais para crianças e adolescentes em situação de
-                    vulnerabilidade.
-                    Impacto: mais de 500 alunos atendidos em 2024.
-                </p>
+            <figure>
+                <img src="img/aularef.png" alt="Crianças em aula de reforço">
+                <figcaption>Atividades do projeto Educação para o Futuro</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Conheça nossos projetos </h2>
+            <p>Nossa ONG desenvolve diversos projetos sociais para atender às necessidades da comunidade. Conheça alguns
+                deles:</p>
+            <br />
+            <ul>
+                <li>Projeto Saúde e Cidadania</li>
+                <li>Alimentação Solidária</li>
+                <li>Esporte e Cultura</li>
+            </ul>
+            <br />
 
-                <figure>
-                    <img src="IMG/aularef.png" alt="Aula de reforço com crianças" width="600">
-                    <figcaption>Atividades do projeto Educação para o Futuro.</figcaption>
-                </figure>
-            </article>
+            <p><strong>Saúde e Cidadania:</strong> Atividades voltadas para a promoção da saúde e direitos humanos.</p>
+            <p><strong>Alimentação Solidária:</strong> Distribuição de cestas básicas e refeições para famílias em
+                situação de vulnerabilidade.</p>
+            <p><strong>Esporte e Cultura:</strong> Incentivo à prática esportiva e atividades culturais para crianças e
+                adolescentes.</p>
 
-            <article>
-                <h3>Projeto "Alimente o Amanhã"</h3>
-                <p>
-                    Programa de distribuição de cestas básicas e refeições diárias para famílias carentes.
-                    Resultados: 20 toneladas de alimentos distribuídos no último ano.
-
-            </article>
         </section>
 
         <section id="voluntariado">
-            <h2>Portal de Voluntariado</h2>
-            <p>Participe de nossas ações e ajude a transformar vidas!</p>
+            <h2>Voluntariado</h2>
+            <p>O voluntariado é o coração da nossa ONG. Você pode contribuir com seu tempo, conhecimento e amor ao
+                próximo em diversos projetos.</p>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Inscreva-se como voluntário</legend>
+            <h3>Como participar</h3>
+            <p>Basta preencher o formulário de inscrição e aguardar o contato da nossa equipe. Todos os voluntários
+                recebem certificados digitais de participação.</p>
 
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
-
-                    <label for="area">Área de interesse:</label>
-                    <select id="area" name="area" required>
-                        <option value="">Selecione...</option>
-                        <option value="educacao">Educação</option>
-                        <option value="alimentacao">Distribuição de alimentos</option>
-                        <option value="saude">Saúde e apoio psicológico</option>
-                    </select>
-
-                    <label for="experiencia">Experiência anterior:</label>
-                    <textarea id="experiencia" name="experiencia" rows="3"
-                        placeholder="Conte-nos sobre sua experiência"></textarea>
-
-                    <button type="submit">Enviar inscrição</button>
-                </fieldset>
-            </form>
+            <a href="cadastro.html" class="botao">Inscreva-se como voluntário</a>
         </section>
 
-
         <section id="doacoes">
-            <h2>Campanha de Arrecadação</h2>
-            <p>Contribua com nossos projetos e ajude-nos a alcançar nossas metas!</p>
+            <h2>Doações</h2>
+            <p>Suas doações ajudam a manter nossos projetos e transformar vidas. Aceitamos contribuições financeiras e
+                materiais escolares.</p>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Faça sua doação</legend>
-
-                    <label for="valor">Valor da doação (R$):</label>
-                    <input type="number" id="valor" name="valor" min="10" step="5" required>
-
-                    <label for="metodo">Método de pagamento:</label>
-                    <select id="metodo" name="metodo" required>
-                        <option value="">Selecione...</option>
-                        <option value="pix">PIX</option>
-                        <option value="transferencia">Transferência bancária</option>
-                        <option value="cartao">Cartão de crédito</option>
-                    </select>
-
-                    <button type="submit">Confirmar Doação</button>
-                </fieldset>
-            </form>
+            <ul>
+                <li><strong>Pix:</strong> contato@ongesperancaviva.org</li>
+                <li><strong>Conta Bancária:</strong> Banco Solidário - Ag: 1234 - C/C: 56789-0</li>
+            </ul>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 ONG Esperança Viva | Transformando vidas através da solidariedade.</p>
+    <footer class="container">
+        &copy; 2025 ONG Esperança Viva | Todos os direitos reservados.
+        Rua da Solidariedade, 123 - Patos de Minas/MG |
+        <a href="mailto:contato@ongesperancaviva.org">contato@ongesperancaviva.org</a> |
+        Tel: (38) 99999-0000
     </footer>
+
 </body>
 
 </html>
